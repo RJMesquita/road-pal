@@ -234,4 +234,7 @@ terraform.rc
 DerivedData/
 *.ipa
 
+# Temporary files to ignore
+data/fig/
+
 

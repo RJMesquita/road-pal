@@ -10,7 +10,7 @@ Road Pal is an AI-powered assistant specialized in the Portuguese Highway Code (
 - **Chatbot interface** using Gradio for interactive Q&A.
 - **Retrieval-Augmented Generation (RAG):** Combines OpenAI LLMs with a vector database for context-aware answers.
 - **Document ingestion:** Supports both PDF (official code) and Markdown (practice questions).
-- **Supabase vector store:** Stores document embeddings for fast semantic search.
+- **Supabase vector store:** Stores document embeddings for fast search.
 
 ## How it works
 
