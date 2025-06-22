@@ -55,4 +55,5 @@ Create a .env file with your OpenAI and Supabase credentials:
 ## TODO
 
 - **Refactor for Scalability:** Enhance the existing codebase to ensure greater scalability and maintainability for future growth.
+- **Improve User Interface:** Refine the application's interface to effectively present tests and provide comprehensive assistance to students.
 - **Integrate Multimodal Support:** (Optional) Implement the capability to embed both text and images, leveraging advanced models such as OpenAI GPT-4o for comprehensive data representation.
