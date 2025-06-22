@@ -1,0 +1,237 @@
+# Generic .gitignore for macOS, Windows, and Linux systems
+#
+# This file is a general template. You may need to customize it for your
+# specific project needs. For more language or framework specific ignores,
+# check out https://github.com/github/gitignore
+
+# Operating System Files
+# -----------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+
+# IDE and Editor Specific Files
+# -----------------------------------------------------------------------------
+# IntelliJ IDEA family (PyCharm, WebStorm, Android Studio, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/ # IntelliJ IDEA output directory
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+packages/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/ # Eclipse output directory
+
+# NetBeans
+nbproject/
+build/ # Also common build output
+dist/ # Also common build output
+
+# Vim
+*.swp
+*.swo
+*.swn
+Session.vim
+.netrwhist
+
+# Emacs
+*#
+#*#
+auto-save-list
+
+# Language & Framework Specific
+# -----------------------------------------------------------------------------
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+virtualenv/
+VENV/
+.Python
+
+# Python Distribution / Packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python Installer & Versioning
+pip-log.txt
+pip-delete-this-directory.txt
+.python-version # For pyenv, if you don't want to enforce the version
+
+# Python Testing
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json # Often committed, but can be ignored in library projects
+yarn.lock # Often committed
+
+# Java (Maven / Gradle)
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildSrc/build/
+buildSrc/.gradle/
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.obj
+*.obj.*
+
+# Build output directories (generic)
+# build/ and dist/ are already listed in Python and Netbeans sections
+# but reiterated here for general purpose.
+build/
+dist/
+out/
+bin/
+
+# Dependency Management Directories (generic)
+# node_modules/ is already listed
+vendor/ # Common for PHP (Composer), Go, Ruby
+.bundle/ # Ruby Bundler
+
+# Log Files
+# -----------------------------------------------------------------------------
+*.log
+logs/
+*.log.*
+
+# Temporary Files
+# -----------------------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Secrets and Sensitive Data (NEVER commit sensitive files!)
+# -----------------------------------------------------------------------------
+# It's good practice to commit example files (e.g., .env.example)
+# but ignore the actual secret files.
+*.env
+.env.*
+!.env.example
+!*.env.sample
+secrets.*
+credentials.*
+config.json # If it contains sensitive data; commit a template instead.
+*.pem
+*.key
+*.keychain
+*.token
+
+# Miscellaneous
+# -----------------------------------------------------------------------------
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# AWS SAM
+.aws-sam/
+
+# Serverless Framework
+.serverless/
+
+# Mobile Development (common)
+# Android
+*.apk
+*.ap_
+*.aab
+# iOS
+DerivedData/
+*.ipa
+
+

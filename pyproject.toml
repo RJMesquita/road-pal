@@ -1,0 +1,25 @@
+[project]
+name = "road-pal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.29.1",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-openai>=0.3.18",
+    "langchain-text-splitters>=0.3.8",
+    "loguru>=0.7.3",
+    "pypdf>=5.5.0",
+    "python-dotenv>=1.1.0",
+    "supabase>=2.15.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.10",
+]
+notebooks = [
+    "ipykernel>=6.29.5",
+]
