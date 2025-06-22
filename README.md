@@ -48,12 +48,45 @@ Create a .env file with your OpenAI and Supabase credentials:
     - This will parse PDFs and Markdown, create embeddings, and populate Supabase.
     Run the chatbot
 4. **Run the chatbot**  
-    `python app.py`
+    `uv run app.py`
 
     Access the Gradio interface in your browser.
+
+## How to Contribute
+
+We welcome contributions! Please follow these guidelines to help us maintain a clean and meaningful commit history:
+
+### Commit Emoji Guide
+
+- ✨ `:sparkles:` — New features
+- 🔨 `:hammer:` — Updates or improvements
+- 🔥 `:fire:` — Removing files or code
+- 🚚 `:truck:` — Move or rename files
+- 🔖 `:bookmark:` — New versions/releases
+- 📚 `:books:` — Documentation changes
+- ✅ `:white_check_mark:` — Adding or updating tests
+
+### Example Commit Messages
+
+- ✨ Add user authentication to chatbot
+- 🔨 Update ingestion script for Markdown images
+- 🔥 Remove deprecated PDF parser
+- 🚚 Move utils to ingestion folder
+- 🔖 Release v1.1.0
+- 📚 Update README with setup instructions
+- ✅ Add tests for document ingestion
+
+### Contribution Steps
+
+1. Fork the repository and create your branch from `main`.
+2. Make your changes and commit using the emoji guide above.
+3. Push your branch and open a Pull Request with a clear description.
+
+Thank you for helping improve Road Pal ❤️
 
 ## TODO
 
 - **Refactor for Scalability:** Enhance the existing codebase to ensure greater scalability and maintainability for future growth.
 - **Improve User Interface:** Refine the application's interface to effectively present tests and provide comprehensive assistance to students.
-- **Integrate Multimodal Support:** (Optional) Implement the capability to embed both text and images, leveraging advanced models such as OpenAI GPT-4o for comprehensive data representation.
+- **Integrate Multimodal Support:** Implement the capability to embed both text and images, leveraging advanced models such as OpenAI GPT-4o for comprehensive data representation.
+- **User Authentication:** Implement user authentication with credentials for personalized experiences, data management and security.
