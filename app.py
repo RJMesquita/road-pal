@@ -8,6 +8,8 @@ from langchain_openai import OpenAIEmbeddings
 from loguru import logger
 from supabase import Client, create_client
 
+from src.constants import CHATBOT_AVATAR_URL, GRADIO_THEME
+
 # Load environment variables from .env file
 load_dotenv(override=True)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
@@ -154,13 +156,13 @@ def openai_chatbot_logic(message, history):
 chat_interface = gr.ChatInterface(
     fn=openai_chatbot_logic,
     title="Road Pal 🚗🏍️",
-    description="Pergunta-me o que quiseres sobre o Código da Estrada ...",  # Updated description
-    theme="soft",
+    description="Pergunta-me o que quiseres sobre o Código da Estrada e outras regras de trânsito...",
+    theme=GRADIO_THEME,
     chatbot=gr.Chatbot(
-        height=450,
+        height=700,
         avatar_images=(
             None,
-            "/Users/ricardo.mesquita/Documents/Trainings/code4all/road_pal/img/avatar_1.jpeg",
+            CHATBOT_AVATAR_URL,
         ),
     ),
     textbox=gr.Textbox(
@@ -172,7 +174,6 @@ chat_interface = gr.ChatInterface(
         "Qual é a velocidade máxima permitida em autoestradas?",
         "Quais são as regras para ultrapassagens?",
         "O que devo fazer se um veículo de emergência se aproximar?",
-        "Como posso obter uma cópia do Código da Estrada?",
         "Quais são as penalizações por conduzir sob o efeito de álcool?",
     ],
     cache_examples=False,
