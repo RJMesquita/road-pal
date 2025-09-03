@@ -3,7 +3,9 @@
   <img src="img/avatar_1.jpeg" alt="Road Pal" height="120"/>
 </p>
 
-Road Pal is an AI-powered assistant specialized in the Portuguese Highway Code ("Código da Estrada"). It helps users—especially those preparing for their driving license—by answering questions, providing explanations, and supporting learning with both official legislation and practical questions.
+**Road Pal is an AI-powered assistant specialized in the Portuguese Highway Code ("Código da Estrada")**. It helps users—especially those preparing for their driving license—by answering questions, providing explanations, and supporting learning with both official legislation and practical questions.
+
+This project was developed as part of my final project for the **Practical Introduction to Artificial Intelligence | For Programmers** course at **Code for All**. It began with the idea of creating a small assistant to help students in driving schools obtain their licenses. While currently a prototype, future developments are planned and contributions are welcome. For more information, please refer to the 'How to Contribute' section on this page.
 
 ## Features
 
@@ -84,9 +86,10 @@ We welcome contributions! Please follow these guidelines to help us maintain a c
 
 Thank you for helping improve Road Pal ❤️
 
-## TODO
+### Next steps:
 
 - **Refactor for Scalability:** Enhance the existing codebase to ensure greater scalability and maintainability for future growth.
 - **Improve User Interface:** Refine the application's interface to effectively present tests and provide comprehensive assistance to students.
 - **Integrate Multimodal Support:** Implement the capability to embed both text and images, leveraging advanced models such as OpenAI GPT-4o for comprehensive data representation.
 - **User Authentication:** Implement user authentication with credentials for personalized experiences, data management and security.
+- **Improve the Ingestion Process:** Create a robust data ingestion pipeline using tools like Prefect or similar packages to optimize the process.
